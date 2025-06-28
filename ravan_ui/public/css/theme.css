@@ -71,5 +71,15 @@ body,
 .form-control:focus,
 .form-select:focus {
     background-color: var(--input-focus-bg) !important;
-    border-color: var(--input-focus-border-color) !importan
+    border-color: var(--input-focus-border-color) !important;
+}
+
+/* Hide Help from Navbar */
+.navbar .dropdown-help {
+    display: none !important;
+}
+
+/* Hide ERPNext Integrations from Sidebar */
+.sidebar-item a[title="ERPNext Integrations"] {
+    display: none !important;
 }
