@@ -1,0 +1,78 @@
+:root {
+    --font-family-sans-serif: 'Ubuntu', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: 'Ubuntu Mono', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+[data-theme="light"] {
+    --primary-color: #4e0091;
+    --primary-color-hover: #3a006a;
+    --primary-color-light: #f2e6ff;
+    --primary-color-light-hover: #e6d9f2;
+
+    --text-color: #212529;
+    --text-color-light: #5a5a5a;
+    --text-color-muted: #8d8d8d;
+
+    --background-color: #ffffff;
+    --background-color-light: #f0f2f5;
+    --background-color-dark: #e9ecef;
+
+    --border-color: #dee2e6;
+    --border-color-light: #f1f1f1;
+
+    --card-bg: #ffffff;
+    --card-border-color: var(--border-color);
+    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    --button-bg: var(--primary-color);
+    --button-text-color: #ffffff;
+    --button-hover-bg: var(--primary-color-hover);
+
+    --input-bg: #fdfdfd;
+    --input-border-color: #ced4da;
+    --input-focus-bg: #ffffff;
+    --input-focus-border-color: var(--primary-color);
+
+    --modal-bg: #ffffff;
+    --modal-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--primary-color-hover);
+}
+
+[data-theme="dark"] {
+    --primary-color: #9d4edd;
+    --primary-color-hover: #b370f2;
+    --primary-color-light: #3c1e5b;
+    --primary-color-light-hover: #4a2a6f;
+
+    --text-color: #e0e0e0;
+    --text-color-light: #b0b0b0;
+    --text-color-muted: #7e7e7e;
+
+    --background-color: #121212;
+    --background-color-light: #2a2a2a;
+    --background-color-dark: #2c2c2c;
+
+    --border-color: #3c3c3c;
+    --border-color-light: #2a2a2a;
+
+    --card-bg: #1e1e1e;
+    --card-border-color: var(--border-color);
+    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.48);
+
+    --button-bg: var(--primary-color);
+    --button-text-color: #ffffff;
+    --button-hover-bg: var(--primary-color-hover);
+
+    --input-bg: #252525;
+    --input-border-color: #495057;
+    --input-focus-bg: #2c2c2c;
+    --input-focus-border-color: var(--primary-color);
+
+    --modal-bg: #1e1e1e;
+    --modal-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--primary-color-hover);
+}
