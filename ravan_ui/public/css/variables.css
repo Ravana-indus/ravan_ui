@@ -1,6 +1,6 @@
 :root {
-    --font-sans: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-sans-condensed: "SF Pro Display", "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-sans: "Ubuntu", "Ubuntu Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-sans-condensed: "Ubuntu", "Ubuntu Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     --font-mono: "SFMono-Regular", "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
     --motion-duration-rapid: 160ms;
