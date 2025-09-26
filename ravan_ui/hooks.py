@@ -51,7 +51,7 @@ app_include_js = "/assets/ravan_ui/js/ravan_ui.js"
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "ravan_ui/public/icons.svg"
+app_include_icons = "ravan_ui/public/icons.svg"
 
 # Home Pages
 # ----------
