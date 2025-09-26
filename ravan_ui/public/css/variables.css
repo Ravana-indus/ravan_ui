@@ -1,180 +1,104 @@
 :root {
-    --font-sans: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-sans-condensed: "SF Pro Display", "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --font-mono: "SFMono-Regular", "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-sans-serif: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-family-monospace: 'Ubuntu Mono', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
-    --motion-duration-rapid: 160ms;
-    --motion-duration-base: 220ms;
-    --motion-duration-slow: 360ms;
-    --motion-ease-standard: cubic-bezier(0.22, 0.61, 0.36, 1);
-    --motion-ease-emphasized: cubic-bezier(0.32, 0.72, 0, 1);
-
-    --shadow-raised: 0 30px 60px rgba(15, 23, 42, 0.18);
-    --shadow-floating: 0 18px 40px rgba(15, 23, 42, 0.14);
-    --shadow-soft: 0 1px 3px rgba(15, 23, 42, 0.08);
-
-    --surface-blur: 26px;
-    --border-width-hairline: 0.5px;
-    --border-width: 1px;
-
-    --control-radius-sm: 10px;
-    --control-radius: 12px;
-    --control-radius-lg: 18px;
-
-    --density-tight: 12px;
-    --density-regular: 16px;
-    --density-loose: 24px;
-
-    --sidebar-width: 268px;
-
-    --accent-color: #0a84ff;
-    --accent-color-strong: #0060df;
-    --accent-color-soft: rgba(10, 132, 255, 0.16);
-    --accent-on-accent: #ffffff;
-    --accent-shadow: 0 0 0 1px rgba(10, 132, 255, 0.18), 0 10px 24px rgba(10, 132, 255, 0.24);
-    --surface-window: #050509;
-    --surface-base: rgba(28, 28, 30, 0.82);
-    --surface-raised: rgba(37, 37, 39, 0.82);
-    --surface-popover: rgba(44, 44, 46, 0.88);
-    --surface-translucent: rgba(29, 29, 31, 0.76);
-    --surface-divider: rgba(84, 84, 88, 0.3);
-    --surface-divider-strong: rgba(199, 199, 204, 0.28);
-    --surface-border: rgba(255, 255, 255, 0.08);
-    --surface-border-strong: rgba(255, 255, 255, 0.18);
-    --surface-sidebar: rgba(22, 22, 24, 0.78);
-    --surface-sidebar-active: rgba(10, 132, 255, 0.22);
-
-    --text-primary: rgba(255, 255, 255, 0.92);
-    --text-secondary: rgba(235, 235, 245, 0.66);
-    --text-tertiary: rgba(235, 235, 245, 0.42);
-    --text-quaternary: rgba(235, 235, 245, 0.28);
-    --text-inverse: rgba(17, 17, 17, 0.92);
-
-    --input-background: rgba(44, 44, 46, 0.68);
-    --input-border: rgba(255, 255, 255, 0.06);
-    --input-border-active: rgba(10, 132, 255, 0.7);
-    --input-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 1px 2px rgba(0, 0, 0, 0.4);
-
-    --table-row-hover: rgba(10, 132, 255, 0.18);
-    --pill-background: rgba(235, 235, 245, 0.16);
-    --badge-background: rgba(235, 235, 245, 0.18);
-
-    --icon-container: rgba(235, 235, 245, 0.12);
-    --icon-container-active: rgba(10, 132, 255, 0.26);
-
-    --selection-color: rgba(10, 132, 255, 0.24);
-    --selection-outline: rgba(10, 132, 255, 0.38);
-
-[data-accent="blue"] {
-    --accent-color: #0a84ff;
-    --accent-color-strong: #0060df;
-    --accent-color-soft: rgba(10, 132, 255, 0.16);
-    --accent-on-accent: #ffffff;
-    --accent-shadow: 0 0 0 1px rgba(10, 132, 255, 0.18), 0 10px 24px rgba(10, 132, 255, 0.24);
+    --layout-page-padding: clamp(16px, 2vw, 28px);
+    --layout-section-gap: clamp(14px, 2vw, 24px);
+    --layout-stack-gap: clamp(10px, 1.4vw, 18px);
+    --sidebar-width: 260px;
+    --sidebar-radius: 12px;
+    --sidebar-item-padding-y: 0.65rem;
+    --sidebar-item-padding-x: 1rem;
+    --launchpad-min-width: 220px;
+    --launchpad-gap: clamp(16px, 2vw, 24px);
 }
 
-[data-accent="green"] {
-    --accent-color: #30d158;
-    --accent-color-strong: #248a3d;
-    --accent-color-soft: rgba(48, 209, 88, 0.18);
-    --accent-on-accent: #031d0b;
-    --accent-shadow: 0 0 0 1px rgba(48, 209, 88, 0.18), 0 10px 24px rgba(48, 209, 88, 0.24);
+[data-theme='light'] {
+    --primary-color: #4e0091;
+    --primary-color-hover: #3a006a;
+    --primary-color-light: #f2e6ff;
+    --primary-color-light-hover: #e6d9f2;
+
+    --text-color: #212529;
+    --text-color-light: #5a5a5a;
+    --text-color-muted: #8d8d8d;
+
+    --background-color: #ffffff;
+    --background-color-light: #f0f2f5;
+    --background-color-dark: #e9ecef;
+
+    --border-color: #dee2e6;
+    --border-color-light: #f1f1f1;
+
+    --card-bg: #ffffff;
+    --card-border-color: var(--border-color);
+    --card-shadow: 0 12px 24px rgba(33, 37, 41, 0.08);
+
+    --button-bg: var(--primary-color);
+    --button-text-color: #ffffff;
+    --button-hover-bg: var(--primary-color-hover);
+
+    --input-bg: #fdfdfd;
+    --input-border-color: #ced4da;
+    --input-focus-bg: #ffffff;
+    --input-focus-border-color: var(--primary-color);
+
+    --modal-bg: #ffffff;
+    --modal-shadow: 0 16px 40px rgba(33, 37, 41, 0.18);
+
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--primary-color-hover);
+
+    --sidebar-hover-bg: rgba(78, 0, 145, 0.08);
+    --sidebar-active-bg: rgba(78, 0, 145, 0.16);
+
+    --launchpad-surface: #ffffff;
+    --launchpad-border: rgba(78, 0, 145, 0.16);
+    --launchpad-hover-border: rgba(78, 0, 145, 0.28);
+    --launchpad-glyph-bg: rgba(78, 0, 145, 0.14);
 }
 
-[data-accent="orange"] {
-    --accent-color: #ff9f0a;
-    --accent-color-strong: #c36a00;
-    --accent-color-soft: rgba(255, 159, 10, 0.2);
-    --accent-on-accent: #2b1700;
-    --accent-shadow: 0 0 0 1px rgba(255, 159, 10, 0.24), 0 10px 24px rgba(255, 159, 10, 0.28);
-}
+[data-theme='dark'] {
+    --primary-color: #9d4edd;
+    --primary-color-hover: #b370f2;
+    --primary-color-light: #3c1e5b;
+    --primary-color-light-hover: #4a2a6f;
 
-[data-accent="pink"] {
-    --accent-color: #ff2d55;
-    --accent-color-strong: #c01333;
-    --accent-color-soft: rgba(255, 45, 85, 0.18);
-    --accent-on-accent: #2a030a;
-    --accent-shadow: 0 0 0 1px rgba(255, 45, 85, 0.22), 0 10px 24px rgba(255, 45, 85, 0.3);
-}
+    --text-color: #e0e0e0;
+    --text-color-light: #b0b0b0;
+    --text-color-muted: #7e7e7e;
 
-[data-theme="light"] {
-    --surface-window: #f5f6f9;
-    --surface-base: rgba(255, 255, 255, 0.86);
-    --surface-raised: rgba(255, 255, 255, 0.92);
-    --surface-popover: rgba(255, 255, 255, 0.97);
-    --surface-translucent: rgba(255, 255, 255, 0.76);
-    --surface-divider: rgba(60, 60, 67, 0.18);
-    --surface-divider-strong: rgba(60, 60, 67, 0.28);
-    --surface-border: rgba(30, 41, 59, 0.12);
-    --surface-border-strong: rgba(30, 41, 59, 0.24);
-    --surface-sidebar: rgba(246, 247, 250, 0.84);
-    --surface-sidebar-active: rgba(10, 132, 255, 0.12);
+    --background-color: #121212;
+    --background-color-light: #2a2a2a;
+    --background-color-dark: #2c2c2c;
 
-    --text-primary: rgba(17, 17, 17, 0.92);
-    --text-secondary: rgba(60, 60, 67, 0.72);
-    --text-tertiary: rgba(60, 60, 67, 0.5);
-    --text-quaternary: rgba(60, 60, 67, 0.32);
-    --text-inverse: rgba(255, 255, 255, 0.94);
+    --border-color: #3c3c3c;
+    --border-color-light: #2a2a2a;
 
-    --input-background: rgba(255, 255, 255, 0.68);
-    --input-border: rgba(30, 41, 59, 0.12);
-    --input-border-active: rgba(10, 132, 255, 0.6);
-    --input-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(15, 23, 42, 0.12);
+    --card-bg: #1e1e1e;
+    --card-border-color: var(--border-color);
+    --card-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
 
-    --table-row-hover: rgba(10, 132, 255, 0.08);
-    --pill-background: rgba(60, 60, 67, 0.12);
-    --badge-background: rgba(60, 60, 67, 0.14);
+    --button-bg: var(--primary-color);
+    --button-text-color: #ffffff;
+    --button-hover-bg: var(--primary-color-hover);
 
-    --icon-container: rgba(60, 60, 67, 0.08);
-    --icon-container-active: rgba(10, 132, 255, 0.14);
+    --input-bg: #252525;
+    --input-border-color: #495057;
+    --input-focus-bg: #2c2c2c;
+    --input-focus-border-color: var(--primary-color);
 
-    --selection-color: rgba(10, 132, 255, 0.14);
-    --selection-outline: rgba(10, 132, 255, 0.28);
-}
+    --modal-bg: #1e1e1e;
+    --modal-shadow: 0 20px 48px rgba(0, 0, 0, 0.65);
 
-[data-theme="dark"] {
-    --surface-window: #050509;
-    --surface-base: rgba(28, 28, 30, 0.82);
-    --surface-raised: rgba(37, 37, 39, 0.82);
-    --surface-popover: rgba(44, 44, 46, 0.88);
-    --surface-translucent: rgba(29, 29, 31, 0.76);
-    --surface-divider: rgba(84, 84, 88, 0.3);
-    --surface-divider-strong: rgba(199, 199, 204, 0.28);
-    --surface-border: rgba(255, 255, 255, 0.08);
-    --surface-border-strong: rgba(255, 255, 255, 0.18);
-    --surface-sidebar: rgba(22, 22, 24, 0.78);
-    --surface-sidebar-active: rgba(10, 132, 255, 0.22);
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--primary-color-hover);
 
-    --text-primary: rgba(255, 255, 255, 0.92);
-    --text-secondary: rgba(235, 235, 245, 0.66);
-    --text-tertiary: rgba(235, 235, 245, 0.42);
-    --text-quaternary: rgba(235, 235, 245, 0.28);
-    --text-inverse: rgba(17, 17, 17, 0.92);
+    --sidebar-hover-bg: rgba(157, 78, 221, 0.16);
+    --sidebar-active-bg: rgba(157, 78, 221, 0.24);
 
-    --input-background: rgba(44, 44, 46, 0.68);
-    --input-border: rgba(255, 255, 255, 0.06);
-    --input-border-active: rgba(10, 132, 255, 0.7);
-    --input-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 1px 2px rgba(0, 0, 0, 0.4);
-
-    --table-row-hover: rgba(10, 132, 255, 0.18);
-    --pill-background: rgba(235, 235, 245, 0.16);
-    --badge-background: rgba(235, 235, 245, 0.18);
-
-    --icon-container: rgba(235, 235, 245, 0.12);
-    --icon-container-active: rgba(10, 132, 255, 0.26);
-
-    --selection-color: rgba(10, 132, 255, 0.24);
-    --selection-outline: rgba(10, 132, 255, 0.38);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        color-scheme: dark;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root:not([data-theme="dark"]) {
-        color-scheme: light;
-    }
+    --launchpad-surface: rgba(35, 35, 35, 0.95);
+    --launchpad-border: rgba(157, 78, 221, 0.24);
+    --launchpad-hover-border: rgba(195, 144, 239, 0.36);
+    --launchpad-glyph-bg: rgba(157, 78, 221, 0.24);
 }
